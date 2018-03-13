@@ -1,11 +1,43 @@
 <resources>
+    <string name="app_name">5ePGCreator</string>
+    <string name="name">Nome</string>
+    <string name="race">Razza</string>
+    <string name="Class">Classe</string>
+    <string name="raceFeat">Feature razza</string>
+    <string name="classFeat">Feature classe</string>
+    <string name="modify">Modifica</string>
+    <string name="back">Indietro</string>
+    <string name="delete">Elimina</string>
+    <string name="insert">Inserisci</string>
+    <string name="cancel">Annulla</string>
+    <string name="New">Nuovo</string>
+    <string name="myPgs">I miei personaggi</string>
 
-    <string name="app_name">OB Example</string>
-    <string name="app_name_reactive">OB Reactive Example</string>
+    <string name="human">Umano</string>
+    <string name="dwarf">Nano</string>
 
-    <string name="enter_new_note">Enter new note</string>
-    <string name="add">Add</string>
-    <string name="click_to_remove">Click a note to remove it</string>
-    <string name="log">Log</string>
+    <string name="warrior">Guerriero</string>
+    <string name="barbarian">Barbaro</string>
 
+    <string name="knowledge">Conoscenza</string>
+    <string name="darkvision">Scurovisione</string>
+    <string name="training">Addesramento</string>
+    <string name="experience">Esperienza in battaglia</string>
+    <string name="rage">Ira</string>
+
+    <string name="knowledgeDesc">Conosci due lingue oltre al Comune.</string>
+    <string name="darkvisionDesc">Puoi vedere al buio entro 9m.</string>
+    <string name="trainingDesc">Puoi usare ogni tipo di arma e armatura</string>
+    <string name="experienceDesc">Capisci facilmente qual è il nemico più debole.</string>
+    <string name="rageDesc">La tua rabbia aumenta i tuoi danni che infliggi.</string>
+
+    <string-array name="Razze">
+        <item>Umano</item>
+        <item>Nano</item>
+    </string-array>
+
+    <string-array name="Classi">
+        <item>Guerriero</item>
+        <item>Barbaro</item>
+    </string-array>
 </resources>

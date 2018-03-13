@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context="com.example.user.a5epgcreator.DetailActivity">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:shrinkColumns="2">
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textViewNomeD"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_width="0dip"
+                android:text="@string/name" />
+
+            <TextView
+                android:id="@+id/textViewShowNomeD"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_width="0dip"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textViewRazzaD"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_width="0dip"
+                android:text="@string/race" />
+
+            <TextView
+                android:id="@+id/textViewShowRazzaD"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_width="0dip"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textViewClasseD"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_width="0dip"
+                android:text="@string/Class" />
+
+            <TextView
+                android:id="@+id/textViewShowClasseD"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_width="0dip"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textViewFeaturesRazzaD"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_width="0dip"
+                android:text="@string/raceFeat" />
+
+            <TextView
+                android:id="@+id/textViewShowFeaturesRazzaD"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_width="0dip"
+                android:width="0dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:ellipsize="start"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textViewFeaturesClasseD"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_width="0dip"
+                android:text="@string/classFeat" />
+
+            <TextView
+                android:id="@+id/textViewShowFeaturesClasseD"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_width="0dip"
+                android:width="0dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:ellipsize="start"/>
+        </TableRow>
+
+        <TableRow>
+            <Button
+                android:id="@+id/buttonModificaD"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_width="0dip"
+                android:text="@string/modify" />
+
+            <Button
+                android:id="@+id/buttonIndietroD"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_width="0dip"
+                android:text="@string/back" />
+        </TableRow>
+    </TableLayout>
+</ScrollView>

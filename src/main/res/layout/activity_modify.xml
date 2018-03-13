@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.user.a5epgcreator.ModifyActivity">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/buttonModificaM"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="52dp"
+            android:layout_marginTop="36dp"
+            android:text="@string/modify"
+            app:layout_constraintEnd_toEndOf="@+id/spinnerClassiM"
+            app:layout_constraintTop_toBottomOf="@+id/spinnerClassiM"
+            android:layout_marginRight="52dp" />
+
+        <EditText
+            android:id="@+id/editTextNomeM"
+            android:layout_width="165dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+            android:layout_marginStart="64dp"
+            android:layout_marginTop="16dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textViewNomeM"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginLeft="64dp" />
+
+        <TextView
+            android:id="@+id/textViewRazzaM"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="28dp"
+            android:text="@string/race"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:textSize="18sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewNomeM" />
+
+        <Spinner
+            android:id="@+id/spinnerClassiM"
+            android:layout_width="162dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="120dp"
+            android:layout_marginTop="28dp"
+            app:layout_constraintEnd_toEndOf="@+id/spinnerRazzeM"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/textViewClasseM"
+            app:layout_constraintTop_toBottomOf="@+id/spinnerRazzeM"
+            android:layout_marginLeft="120dp" />
+
+        <TextView
+            android:id="@+id/textViewClasseM"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="28dp"
+            android:text="@string/Class"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewRazzaM"
+            android:layout_marginLeft="48dp" />
+
+        <Spinner
+            android:id="@+id/spinnerRazzeM"
+            android:layout_width="163dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="108dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="@+id/editTextNomeM"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/textViewRazzaM"
+            app:layout_constraintTop_toBottomOf="@+id/editTextNomeM"
+            android:layout_marginLeft="108dp" />
+
+        <TextView
+            android:id="@+id/textViewNomeM"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="28dp"
+            android:text="@string/name"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginLeft="48dp" />
+
+        <Button
+            android:id="@+id/buttonAnnullaM"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="60dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="192dp"
+            android:text="@string/cancel"
+            app:layout_constraintEnd_toStartOf="@+id/buttonModificaM"
+            app:layout_constraintHorizontal_bias="0.254"
+            app:layout_constraintStart_toStartOf="@+id/textViewClasseM"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginRight="60dp"
+            android:layout_marginLeft="8dp" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</ScrollView>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    tools:context="com.example.user.a5epgcreator.InsertActivity"
+    android:fillViewport="true">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+
+
+        <Button
+            android:id="@+id/buttonInserisciI"
+            android:layout_width="106dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="192dp"
+            android:text="@string/insert"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/editTextNomeI"
+            android:layout_width="165dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="12dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.774"
+            app:layout_constraintStart_toEndOf="@+id/textViewNomeI"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginRight="12dp"
+            android:layout_marginLeft="8dp" />
+
+        <TextView
+            android:id="@+id/textViewRazzaI"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="28dp"
+            android:text="@string/race"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewNomeI"
+            android:layout_marginLeft="48dp" />
+
+        <Spinner
+            android:id="@+id/spinnerClassiI"
+            android:layout_width="162dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="268dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintEnd_toEndOf="@+id/spinnerRazzeI"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/textViewClasseI"
+            app:layout_constraintTop_toBottomOf="@+id/spinnerRazzeI"
+            android:layout_marginLeft="268dp" />
+
+        <TextView
+            android:id="@+id/textViewClasseI"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="52dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/Class"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:textSize="18sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewRazzaI" />
+
+        <Spinner
+            android:id="@+id/spinnerRazzeI"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="276dp"
+            android:layout_marginTop="24dp"
+            app:layout_constraintEnd_toEndOf="@+id/editTextNomeI"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/textViewRazzaI"
+            app:layout_constraintTop_toBottomOf="@+id/editTextNomeI"
+            android:layout_marginLeft="276dp" />
+
+        <TextView
+            android:id="@+id/textViewNomeI"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="36dp"
+            android:text="@string/name"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginLeft="48dp" />
+
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>
