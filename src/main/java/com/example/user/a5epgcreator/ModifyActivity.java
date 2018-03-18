@@ -40,9 +40,8 @@ public class ModifyActivity extends AppCompatActivity {
 
         Bundle extra = getIntent().getExtras();
 
-        List<Pg> list = App.pgBox.query().equal(Pg_.id, (Long) extra.get("pg")).build().find();
+        pg = App.pgBox.query().equal(Pg_.id, (Long) extra.get("pg")).build().findUnique();
 
-        pg = list.get(0);
 
         editTextNome.setText(pg.getNome());
         spinnerRazze.setSelection(adapterRazze.getPosition(pg.razza.getTarget().getNome()));
@@ -87,6 +86,7 @@ public class ModifyActivity extends AppCompatActivity {
 
     public void changeActivity () {
         Intent i = new Intent(ModifyActivity.this, DetailActivity.class);
+        i.putExtra("pg", pg.getId());
         startActivity(i);
         finish();
     }

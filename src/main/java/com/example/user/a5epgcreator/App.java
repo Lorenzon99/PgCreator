@@ -2,6 +2,7 @@ package com.example.user.a5epgcreator;
 
 import android.app.Application;
 import android.content.SharedPreferences;
+import android.content.res.Resources;
 import android.preference.PreferenceManager;
 
 import io.objectbox.*;
@@ -17,6 +18,8 @@ public class App extends Application {
     public static Box<Classe> classeBox;
     public static Box<Feature> featureBox;
 
+    private SharedPreferences prefs;
+
     @Override
     public void onCreate() {
         super.onCreate();
@@ -26,9 +29,9 @@ public class App extends Application {
         classeBox = boxStore.boxFor(Classe.class);
         featureBox = boxStore.boxFor(Feature.class);
 
-        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
-        if(!prefs.getBoolean("firstTime", false)) {
+        prefs = PreferenceManager.getDefaultSharedPreferences(this);
 
+        if(!prefs.getBoolean("firstTime", false)) {
             Razza umano = new Razza(0, getString(R.string.human));
             Razza nano = new Razza(0, getString(R.string.dwarf));
 
@@ -40,6 +43,20 @@ public class App extends Application {
             Feature addestramento = new Feature(0, getString(R.string.training), getString(R.string.trainingDesc));
             Feature esperienza = new Feature(0, getString(R.string.experience), getString(R.string.experienceDesc));
             Feature ira = new Feature(0, getString(R.string.rage), getString(R.string.rageDesc));
+
+            /*
+            Razza umano = new Razza(0, "human");
+            Razza nano = new Razza(0, "dwarf");
+
+            Classe guerriero = new Classe(0, "warrior");
+            Classe barbaro = new Classe(0, "barbarian");
+
+            Feature conoscenza = new Feature(0, "knowledge", "knowledgeDesc");
+            Feature scurovisione = new Feature(0, "darkvision", "darkvisionDesc");
+            Feature addestramento = new Feature(0, "training", "trainingDesc");
+            Feature esperienza = new Feature(0, "experience", "experienceDesc");
+            Feature ira = new Feature(0, "rage", "rageDesc");
+            */
 
             umano.features.add(conoscenza);
 
@@ -70,7 +87,15 @@ public class App extends Application {
 
             SharedPreferences.Editor editor = prefs.edit();
             editor.putBoolean("firstTime", true);
+            editor.putString("sysLang", Resources.getSystem().getConfiguration().locale.getLanguage());
             editor.commit();
         }
     }
+
+    private String getStringByName (String find) {
+        String packageName = getPackageName();
+        int resId = getResources().getIdentifier(find, "string", packageName);
+        return getString(resId);
+    }
+
 }

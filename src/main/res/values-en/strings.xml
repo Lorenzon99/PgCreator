@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">5ePGCreator</string>
+
     <string name="name">Name</string>
     <string name="race">Race</string>
     <string name="raceFeat">Race features</string>
     <string name="classFeat">Class features</string>
+
     <string name="modify">Modify</string>
     <string name="back">Back</string>
     <string name="delete">Delete</string>
@@ -12,19 +14,34 @@
     <string name="cancel">Cancel</string>
     <string name="Class">Class</string>
     <string name="New">New</string>
+
     <string name="myPgs">My characters</string>
+
     <string name="human">Human</string>
     <string name="dwarf">Dwarf</string>
+
     <string name="warrior">Warrior</string>
     <string name="barbarian">Barbarian</string>
+
     <string name="knowledge">Knowledge</string>
     <string name="darkvision">Darkvision</string>
     <string name="training">Training</string>
     <string name="experience">Battle experience</string>
     <string name="rage">Rage</string>
-    <string name="knowledgeDesc">You know two languages in ddition to Common.</string>
+
+    <string name="knowledgeDesc">You know two languages in addition to Common.</string>
     <string name="darkvisionDesc">You can see in the dark within 9m.</string>
     <string name="trainingDesc">You can use any armor and weapon.</string>
     <string name="experienceDesc">You easily spot the weakest enemy.</string>
     <string name="rageDesc">Your rage increases the damage you deal.</string>
+
+    <string-array name="Razze">
+        <item>Human</item>
+        <item>Dwarf</item>
+    </string-array>
+
+    <string-array name="Classi">
+        <item>Warrior</item>
+        <item>Barbarian</item>
+    </string-array>
 </resources>
